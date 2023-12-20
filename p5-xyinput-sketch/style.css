@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  h3 {
+    left: 50%; /* Center horizontally */
+    width:100%;
+    color:black;
+}
+
+ 
+  
+  canvas {
+    display: block; /* Removes default margin */
+    margin: 0 auto; /* Centers the canvas */
+    background-color: #000; /* Canvas background */
+  }
+
+  #hover-info {
+    position: absolute;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    pointer-events: none; /* Prevents the div from interfering with canvas interactions */
+    z-index: 100; /* Ensures the div is above other elements */
+    opacity: 0; /* Start with div being transparent */
+    width: 400px;
+    text-align:left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Additional class to control visibility */
+  div#hover-info.visible {
+    opacity: 1; /* Fully visible when the class is added */
+  }
